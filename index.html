@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Scooter Lim by Daniele Marino</title>
+
+    <!-- linkiamo il file style.css all html -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Qua abbiamo importato da google una font -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+</style>
+
+  </head>
+  <body>
+
+    <!-- Qua creiamo un div con classe container per iniziare
+    a inglobare tutto dentro a una certa width -->
+
+    <div class="container">
+
+      <!-- dividiamo il lavoro con 3 tag semantici: header, nav e main -->
+
+      <!-- in header aggiungiamo il logo e un titolo -->
+      <header>
+          <img src="img/logo.png" class="logo" alt="">
+          <h1>Taking Booleaners from A to B</h1>
+      </header>
+
+
+      <!-- in nav creiamo una box rettangolare colorato verde -->
+      <nav>
+        <!-- dentro inseriamo i button -->
+        <button type="button"  class="nav-button" name="booking">Prenota</button>
+        <button type="button" class="nav-button" name="end-booking">Termina Prenotazione</button>
+        <button type="button" class="nav-button" name="lights-on">Accendi Luci</button>
+      </nav>
+
+      <!-- in main creiamo delle sezioni dove andremo, ad ogni sezione,
+      a inserire le varie info -->
+      <main>
+        <section>
+
+          <!-- siccome il checkbox è un inline lo aggiungerò insieme
+          allo span, anche lui, inline  -->
+
+          <input type="checkbox" name="" value="">
+          <span class="section-bold-text">Monopattino Gino22</span>
+
+          <!-- dopodiché dei div con classi per avere uno spazio a capo siccome
+          sono block -->
+          <div class="right-arrow"> Via Guadalametri - a  220 metri da te</div>
+          <div>Stato carica:</div>
+          <div class="orange-bar"></div>
+
+        </section>
+
+        <!-- infine copia e incolla e cambiato le varie info -->
+        <section>
+          <input type="checkbox" name="" value="">
+          <span class="section-bold-text">Monopattino Mike24</span>
+          <div class="right-arrow"> Via Ricciardoni - a  420 metri da te</div>
+          <div>Stato carica:</div>
+          <div class="green-bar"></div>
+        </section>
+
+        <section>
+          <input type="checkbox" name="" value="">
+          <span class="section-bold-text">Monopattino Fede154</span>
+          <div class="right-arrow"> Via Mentarini - a  490 metri da te</div>
+          <div>Stato carica:</div>
+          <div class="red-bar"></div>
+        </section>
+
+
+      </main>
+
+
+    </div>
+  </body>
+</html>
+
+<!-- by Daniele Marino -->
+<!-- Sicurmente poteva esser fatto meglio, subito aver finito il 5° capitolo
+mi sono precipitato a farlo, spero non ci siano troppi errori e orrori -->

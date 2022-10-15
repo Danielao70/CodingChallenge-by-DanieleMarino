@@ -1,0 +1,115 @@
+/* al body applichiamo l'immagine e copriamo la foto 4k con cover,
+poi togliamo la ripetizione e infine, perché immagino ancora non lo abbiamo
+trattato lato mobile, un attachment fixed: per non lasciare in bianco la zona
+senza il repeat (nelle risoluzioni basse)  */
+
+body{
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 25px;
+}
+
+/* un modo per allineare al centro sia header sia nav e sia
+dentro il button di nav */
+header, nav, .nav-button{
+  text-align: center;
+}
+
+
+/* Un titolo h1 dove applichiamo margine 0, il colore
+e un diverso font  (quello di Google) */
+h1{
+  margin: 0px;
+  color: rgb(0,221,0);
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400 bold;
+
+}
+
+/* la barra del nav colorata usata in combinazione con i button */
+nav{
+  background-color: rgb(0,221,0);
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* ogni sezione figlio diretto di main utilizzerà un padding top, una width e una font scelta */
+main > section{
+  padding-top: 14px;
+  width: 80%;
+  margin: auto;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+/* l'ultima sezione di main creerà uno spazio sotto di 120px */
+main section:last-child{
+  padding-bottom: 120px;
+}
+
+
+/* il contenitore nero trasparente che conterrà tutto */
+.container{
+  width: 64%;
+  margin: auto;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 15px;
+
+}
+
+/* il logo a cui si modificherà in caso il margine sopra e la size */
+.logo{
+  margin-top: 100px;
+  width: 256px;
+  height: auto;
+}
+
+
+/* creerà una freccia a destra, all'inizio, ogni volta che verrà
+chiamata la classe .right-arrow */
+.right-arrow::before{
+  content: "\21A6";
+}
+
+/* un modo specifico (la speficità vince sul generico, giusto?)
+per non fare adottare, tramite ereditarietà,il font size e weight
+allo span utilizzato nelle section */
+.section-bold-text{
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* per ogni classe colore-bar, ho creato l'altezza del contenitore
+cosi da riempirlo con background color,
+e con width ho definito la lunghezza */
+
+/* stato della carica in arancione */
+.orange-bar{
+  height: 30px;
+  background-color: rgb(245,180,83);
+  border-radius: 4px;
+  width: 35%;
+}
+
+/* stato della carica in verde */
+.green-bar{
+  height: 30px;
+  background-color: rgb(30,195,30);
+  border-radius: 4px;
+  width: 60%;
+}
+
+/* stato della carica in rosso */
+.red-bar{
+  height: 30px;
+  background-color: rgb(190,65,65);
+  border-radius: 4px;
+  width: 15%;
+}
